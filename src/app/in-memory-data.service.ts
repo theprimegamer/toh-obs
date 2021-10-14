@@ -22,15 +22,15 @@ export class InMemoryDataService implements InMemoryDbService {
 
     const locations = [
       { id: 1001, heroId: 11, name: 'Richmond' },
-      { id: 1002, heroId: 11, name: 'Charlotte' },
-      { id: 1003, heroId: 11, name: 'DC' },
-      { id: 1004, heroId: 11, name: 'Philadelphia' },
-      { id: 1005, heroId: 11, name: 'Atlanta' },
-      { id: 1006, heroId: 11, name: 'Chicago' },
-      { id: 1007, heroId: 11, name: 'Denver' },
-      { id: 1008, heroId: 11, name: 'Columbus' },
-      { id: 1009, heroId: 11, name: 'San Jose' },
-      { id: 1010, heroId: 11, name: 'Seattle' },
+      { id: 1002, heroId: 12, name: 'Charlotte' },
+      { id: 1003, heroId: 13, name: 'DC' },
+      { id: 1004, heroId: 14, name: 'Philadelphia' },
+      { id: 1005, heroId: 15, name: 'Atlanta' },
+      { id: 1006, heroId: 16, name: 'Chicago' },
+      { id: 1007, heroId: 17, name: 'Denver' },
+      { id: 1008, heroId: 18, name: 'Columbus' },
+      { id: 1009, heroId: 19, name: 'San Jose' },
+      { id: 1010, heroId: 20, name: 'Seattle' },
     ];
 
     return { heroes, locations };

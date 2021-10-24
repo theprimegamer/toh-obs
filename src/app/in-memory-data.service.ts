@@ -8,16 +8,16 @@ import { Hero } from './hero';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: 'Dr Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' },
+      { id: 11, name: 'Dr Nice', powerId: 101 },
+      { id: 12, name: 'Narco', powerId: 102 },
+      { id: 13, name: 'Bombasto', powerId: 103 },
+      { id: 14, name: 'Celeritas', powerId: 104 },
+      { id: 15, name: 'Magneta', powerId: 105 },
+      { id: 16, name: 'RubberMan', powerId: 106 },
+      { id: 17, name: 'Dynama', powerId: 107 },
+      { id: 18, name: 'Dr IQ', powerId: 108 },
+      { id: 19, name: 'Magma', powerId: 109 },
+      { id: 20, name: 'Tornado', powerId: 110 },
     ];
 
     const locations = [
@@ -33,7 +33,20 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 1010, heroId: 20, name: 'Seattle' },
     ];
 
-    return { heroes, locations };
+    const powers = [
+      { id: 101, description: 'Is a true friend' },
+      { id: 102, description: 'Sleeps a lot' },
+      { id: 103, description: 'Extremely excited' },
+      { id: 104, description: 'Throws celery around' },
+      { id: 105, description: 'Plays with magnets' },
+      { id: 106, description: 'Bounces around the room' },
+      { id: 107, description: 'Can change on a whim' },
+      { id: 108, description: 'Says he is really smart' },
+      { id: 109, description: 'Melts' },
+      { id: 110, description: 'Spins quite fast' },
+    ];
+
+    return { heroes, locations, powers };
   }
 
   // Overrides the genId method to ensure that a hero always has an id.
